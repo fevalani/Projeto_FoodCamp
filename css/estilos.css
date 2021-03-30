@@ -24,10 +24,6 @@ body{
     font-family: 'Righteous', cursive;
 }
 
-.container{
-    margin: 123px 0 108px 0;
-}
-
 .text{
     color: #000;
     margin: 27px 0 17px 15px;
@@ -35,9 +31,14 @@ body{
     font-family: 'Righteous', cursive;
 }
 
+.container{
+    margin: 123px 0 108px 0;
+}
+
 .container ul{
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
+    padding: 10px 0;
 
 }
 .container ul li:last-child{
@@ -60,6 +61,7 @@ body{
 
 .pedido{
     border: 5px solid #fff;
+    box-shadow: 0 0 0.25em #d1d1d1;
 }
 
 li img{
