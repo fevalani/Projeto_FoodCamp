@@ -63,7 +63,7 @@ body{
     background-color: #fff;
 }
 
-.pedido{
+.prato, .bebida, .sobremesa{
     border: 5px solid #fff;
     box-shadow: 0 0 0.25em #d1d1d1;
 }
@@ -87,7 +87,15 @@ li img{
 
 .preco ion-icon{
     color: #32B72F;
-    visibility: hidden;
+    display: none;
+}
+
+.preco div{
+    display: flex;
+}
+
+.preco div p{
+    margin-left: 5px;
 }
 
 .botao{
