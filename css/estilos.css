@@ -61,11 +61,11 @@ body{
     padding: 10px 10px;
 
     background-color: #fff;
+    box-shadow: 0 0 0.25em #d1d1d1;
 }
 
-.prato, .bebida, .sobremesa{
-    border: 5px solid #fff;
-    box-shadow: 0 0 0.25em #d1d1d1;
+.selecionado{
+    border: 5px solid #32B72F;
 }
 
 li img{
@@ -87,6 +87,9 @@ li img{
 
 .preco ion-icon{
     color: #32B72F;
+}
+
+.desaparecer{
     display: none;
 }
 
@@ -124,8 +127,6 @@ li img{
 }
 
 .confirmacao{
-    visibility: hidden;
-
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255,0.9);
@@ -152,10 +153,6 @@ li img{
 
     color: #fff;
     font-size: 22px;
-}
-
-.totalpedido{
-    display: flex;
 }
 
 .container-confirmacao div:first-child{
