@@ -85,12 +85,13 @@ li img{
     justify-content: space-between;
 }
 
-.preco ion-icon{
+ion-icon{
     color: #32B72F;
+    display: none;
 }
 
-.desaparecer{
-    display: none;
+.aparecer{
+    display: block;
 }
 
 .preco div{
@@ -135,6 +136,8 @@ li img{
     top: 0;
     left: 0;
     z-index: 1;
+
+    display: none;
 }
 
 .container-confirmacao{

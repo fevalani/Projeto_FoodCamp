@@ -1,28 +1,17 @@
-function selecionarPrato1(){
-    const selecionado = document.querySelector(".prato");
-    const icone = document.querySelector(".preco ion-icon");
-    selecionado.classList.toggle('selecionado');
-    icone.classList.toggle('desaparecer');
+function selecionarPrato(prato){
+    const selecionado = document.querySelector(".pratos .selecionado");
+    const icone = document.querySelector(".pratos .aparecer");
 
-}
-function selecionarPrato2(){
-    const selecionado = document.querySelector(".prato:nth-child(2)");
-    const icone = document.querySelector(".preco ion-icon");
-    selecionado.classList.toggle('selecionado');
-    icone.classList.toggle('desaparecer');
+    if (selecionado !== null){
+        selecionado.classList.remove('selecionado');
+        icone.classList.remove('aparecer');
+    }
 
-}function selecionarPrato3(){
-    const selecionado = document.querySelector(".prato:nth-child(3)");
-    const icone = document.querySelector(".preco ion-icon");
-    selecionado.classList.toggle('selecionado');
-    icone.classList.toggle('desaparecer');
+    const seletor = document.querySelector("." + prato);
+    seletor.classList.add('selecionado');
 
-}function selecionarPrato4(){
-    const selecionado = document.querySelector(".prato:last-child");
-    const icone = document.querySelector(".preco ion-icon");
-    selecionado.classList.toggle('selecionado');
-    icone.classList.toggle('desaparecer');
-
+    const tique = document.querySelector("."+ prato +" ion-icon");
+    tique.classList.add('aparecer');
 }
 
 function selecionarbebida(){
