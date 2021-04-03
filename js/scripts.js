@@ -72,3 +72,8 @@ function fechar(){
         botao.classList.remove('desaparecer');
     }
 }
+
+function fecharPedido(){
+    const pedido = document.querySelector(".confirmacao");
+    pedido.classList.remove('desaparecer');
+}

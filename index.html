@@ -150,7 +150,7 @@
         <input type="button" name="#" value="Selecione os 3 itens para fechar o pedido">
         <input class="fechar desaparecer" onclick="fecharPedido()" type="button" name="fechar pedido" value="Fechar Pedido">
     </div>
-    <div class="confirmacao">
+    <div class="confirmacao desaparecer">
         <div class="container-confirmacao">
             <div><strong>Confirme seu pedido</strong></div>
             <div class="produtos">
@@ -159,8 +159,8 @@
                 <div></div>
                 <div></div>
             </div>
-            <input type="button" value="Tudo certo, pode pedir!">
-            <input type="button" value="Cancelar">
+            <input onclick="confirmarPedido()" type="button" value="Tudo certo, pode pedir!">
+            <input onclick="cancelarPedido()" type="button" value="Cancelar">
         </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
