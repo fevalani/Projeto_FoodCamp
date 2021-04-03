@@ -130,6 +130,26 @@ ion-icon{
     white-space: normal;
 }
 
+.botao .fechar{
+    width: calc(100% - 50px);
+    height: 61px;
+
+    position: fixed;
+    z-index: 1;
+    padding: 0px;
+    margin: 0 25px;
+
+    font-weight: bold;
+    bottom: 15px;
+    left: 0;
+
+    background-color: #32B72F;
+}
+
+.desaparecer{
+    display: none;
+}
+
 .confirmacao{
     width: 100%;
     height: 100%;

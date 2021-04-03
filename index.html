@@ -24,7 +24,7 @@
                 <p>Primeiro, seu prato</p>
             </div>
             <ul class="pratos">
-                <li class="feijoada" onclick="selecionarPrato('feijoada')">
+                <li class="feijoada" onclick="selecionarPrato('feijoada', 'Feijoada', '20.50')">
                     <img src="./imagens/feijoada.jpeg" alt="Feijoada">
                     <p><strong>Feijoada</strong></p>
                     <p class="descricao">Feijoada completa para uma pessoa</p>
@@ -33,7 +33,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="strogonoff" onclick="selecionarPrato('strogonoff')">
+                <li class="strogonoff" onclick="selecionarPrato('strogonoff', 'Strogonoff', '24.50')">
                     <img src="./imagens/stroganoff.jpg" alt="Stroganoff">
                     <p><strong>Strogonoff</strong></p>
                     <p class="descricao">Strogonoff de frango com arroz e batata palha</p>
@@ -42,7 +42,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="filet" onclick="selecionarPrato('filet')">
+                <li class="filet" onclick="selecionarPrato('filet', 'Filet à Parmegiana', '23.25')">
                     <img src="./imagens/filetaparmegiana.jpg" alt="Filet a Parmegiana">
                     <p><strong>Filet à Parmegiana</strong></p>
                     <p class="descricao">Parmegiana com arroz e aipim</p>
@@ -51,7 +51,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="rabada" onclick="selecionarPrato('rabada')">
+                <li class="rabada" onclick="selecionarPrato('rabada', 'Rabada', '25.25')">
                     <img src="./imagens/rabada.jpg" alt="Rabada">
                     <p><strong>Rabada</strong></p>
                     <p class="descricao">Rabada com angu e agrião</p>
@@ -66,7 +66,7 @@
                 <p>Agora, sua bebida</p>
             </div>
             <ul class="bebida">
-                <li class="guarana" onclick="selecionarbebida('guarana')">
+                <li class="guarana" onclick="selecionarbebida('guarana', 'Guaraná', '5.50')">
                     <img src="./imagens/guarana.jpeg" alt="Guaraná">
                     <p><strong>Guaraná</strong></p>
                     <p class="descricao">Guaranazin</p>
@@ -75,7 +75,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="coca-cola" onclick="selecionarbebida('coca-cola')">
+                <li class="coca-cola" onclick="selecionarbebida('coca-cola', 'Coca-Cola', '5.40')">
                     <img src="./imagens/cocacola.jpeg" alt="Coca-Cola">
                     <p><strong>Coca-Cola</strong></p>
                     <p class="descricao">coquinha geladinha</p>
@@ -84,7 +84,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="coca-zero" onclick="selecionarbebida('coca-zero')">
+                <li class="coca-zero" onclick="selecionarbebida('coca-zero', 'Coca-Cola Zero', '5.55')">
                     <img src="./imagens/cocazero.jpeg" alt="Coca-Cola Zero">
                     <p><strong>Coca-Cola Zero</strong></p>
                     <p class="descricao">coquinha zero</p>
@@ -93,7 +93,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="suco" onclick="selecionarbebida('suco')">
+                <li class="suco" onclick="selecionarbebida('suco', 'Suco de Laranja', '8.00')">
                     <img src="./imagens/suco de laranja.jpeg" alt="Suco de Laranja">
                     <p><strong>Suco de Laranja</strong></p>
                     <p class="descricao">suco de laranja integral</p>
@@ -108,7 +108,7 @@
                 <p>Por fim, sua sobremesa</p>
             </div>
             <ul class="sobremesa">
-                <li class="pudim" onclick="selecionarsobremesa('pudim')">
+                <li class="pudim" onclick="selecionarsobremesa('pudim', 'Pudim', '10.50')">
                     <img src="./imagens/pudim.jpeg" alt="Pudim">
                     <p><strong>Pudim</strong></p>
                     <p class="descricao">Pudim de leite</p>
@@ -117,7 +117,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="brigadeirao" onclick="selecionarsobremesa('brigadeirao')">
+                <li class="brigadeirao" onclick="selecionarsobremesa('brigadeirao', 'Brigadeirão', '11.50')">
                     <img src="./imagens/brigadeirao.jpeg" alt="Brigadeirão">
                     <p><strong>Brigadeirão</strong></p>
                     <p class="descricao">Brigadeirão fatia</p>
@@ -126,7 +126,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="doce-de-leite" onclick="selecionarsobremesa('doce-de-leite')">
+                <li class="doce-de-leite" onclick="selecionarsobremesa('doce-de-leite', 'Doce de Leite', '8.00')">
                     <img src="./imagens/doce de leite.jpeg" alt="Doce de Leite">
                     <p><strong>Doce de Leite</strong></p>
                     <p class="descricao">Doce de leite caseiro 100g</p>
@@ -135,7 +135,7 @@
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </li>
-                <li class="sorvete" onclick="selecionarsobremesa('sorvete')">
+                <li class="sorvete" onclick="selecionarsobremesa('sorvete', 'Sorvete de Morango', '10.00')">
                     <img src="./imagens/sorvetedemorango.jpeg" alt="sorvete de morango">
                     <p><strong>Sorvete de Morango</strong></p>
                     <p class="descricao">Sorvete da casa feito com carinho, 2 bolas</p>
@@ -147,7 +147,8 @@
         </div>
     </div>
     <div class="botao">
-        <input type="button" name="" value="Selecione os 3 itens para fechar o pedido">
+        <input type="button" name="#" value="Selecione os 3 itens para fechar o pedido">
+        <input class="fechar desaparecer" onclick="fecharPedido()" type="button" name="fechar pedido" value="Fechar Pedido">
     </div>
     <div class="confirmacao">
         <div class="container-confirmacao">
