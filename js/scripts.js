@@ -84,20 +84,23 @@ function fecharPedido(){
     const pedido = document.querySelector(".confirmacao");
     pedido.classList.remove('desaparecer');
 
-    const prato = document.querySelector(".escolha-comida:firstchild");
+    const prato = document.querySelector(".escolha-comida span:first-child");
     prato.innerHTML = nomePrato;
-    const precoP = document.querySelector(".escolha-comida:nthchild(2)");
+    const precoP = document.querySelector(".escolha-comida span:last-child");
     precoP.innerHTML = precoPrato;
 
-    const bebida = document.querySelector(".escolha-bebida span:firstchild");
+    const bebida = document.querySelector(".escolha-bebida span:first-child");
     bebida.innerHTML = nomeBebida;
-    const precoB = document.querySelector(".escolha-bebida span:nthchild(2)");
+    const precoB = document.querySelector(".escolha-bebida span:last-child");
     precoB.innerHTML = precoBebida;
 
-    const sobremesa = document.querySelector(".escolha-sobremesa span:firstchild");
+    const sobremesa = document.querySelector(".escolha-sobremesa span:first-child");
     sobremesa.innerHTML = nomeSobremesa;
-    const precoS = document.querySelector(".escolha-sobremesa span:nthchild(2)");
+    const precoS = document.querySelector(".escolha-sobremesa span:last-child");
     precoS.innerHTML = precoSobremesa;
+
+    const total = document.querySelector(".escolha-total span:last-child");
+    total.innerHTML = parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa);
 
 }
 
