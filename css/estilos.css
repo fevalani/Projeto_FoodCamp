@@ -17,7 +17,7 @@ body{
     background-color: #cf2b2b;
     color: #fff;
 
-    z-index: 1;
+    z-index: 100;
 }
 
 .topo p:first-child {

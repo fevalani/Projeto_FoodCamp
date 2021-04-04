@@ -117,7 +117,18 @@ function fecharPedido(){
 }
 
 function confirmarPedido(){
+    let link = encodeURIComponent("Olá, gostaria de fazer o pedido:");
 
+    /*+ nomePrato + "\
+    - Bebida: " + nomeBebida + "\
+    - Sobremesa: " + nomeSobremesa + "\
+    Total: R$ " + valor + "\
+    Nome: " + nomeConfirmacao + "\
+    Endereço: " + endereco);*/
+
+    //alert(link);
+
+    window.location = "https://wa.me/552492494516?text=" + link;
 }
 
 function cancelarPedido(){
