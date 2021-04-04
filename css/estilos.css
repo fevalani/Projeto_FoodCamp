@@ -199,11 +199,10 @@ ion-icon{
 
 .produtos{
     width: 326px;
-    height: 147px;
     margin-bottom: 24px;
 }
 
-.escolha-comida, .escolha-bebida, .escolha-sobremesa{
+.escolha-comida, .escolha-bebida, .escolha-sobremesa, .nome, .endereco{
     display: flex;
     justify-content: space-between;
     margin: 15px 0;

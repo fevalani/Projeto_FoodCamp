@@ -2,13 +2,18 @@ let prin;
 let sec;
 let ter;
 
-let precoPrato = 0;
-let precoBebida = 0;
-let precoSobremesa = 0;
+let total;
+
+let precoPrato;
+let precoBebida;
+let precoSobremesa;
 
 let nomePrato;
 let nomeBebida;
 let nomeSobremesa;
+
+let nomeConfirmacao;
+let endereco;
 
 function selecionarPrato(prato, nome, valor){
     const selecionado = document.querySelector(".pratos .selecionado");
@@ -81,6 +86,14 @@ function fechar(){
 }
 
 function fecharPedido(){
+    nomeConfirmacao = prompt("Insira seu nome: ");
+    endereco = prompt("Insira seu endereço: ");
+
+    const nome = document.querySelector(".nome");
+    nome.innerHTML = "Nome: " + nomeConfirmacao;
+    const enderecoConfirmacao = document.querySelector(".endereco");
+    enderecoConfirmacao.innerHTML = "Endereço: " + endereco;
+
     const pedido = document.querySelector(".confirmacao");
     pedido.classList.remove('desaparecer');
 
@@ -99,8 +112,11 @@ function fecharPedido(){
     const precoS = document.querySelector(".escolha-sobremesa span:last-child");
     precoS.innerHTML = precoSobremesa;
 
-    const total = document.querySelector(".escolha-total span:last-child");
-    total.innerHTML = parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa);
+    total = document.querySelector(".escolha-total span:last-child");
+    total.innerHTML = ("R$ " + ( (parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa)).toFixed(2)));
+}
+
+function confirmarPedido(){
 
 }
 
