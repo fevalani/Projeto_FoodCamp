@@ -2,8 +2,6 @@ let prin;
 let sec;
 let ter;
 
-let total;
-
 let precoPrato;
 let precoBebida;
 let precoSobremesa;
@@ -112,23 +110,29 @@ function fecharPedido(){
     const precoS = document.querySelector(".escolha-sobremesa span:last-child");
     precoS.innerHTML = precoSobremesa;
 
-    total = document.querySelector(".escolha-total span:last-child");
+    const total = document.querySelector(".escolha-total span:last-child");
     total.innerHTML = ("R$ " + ( (parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa)).toFixed(2)));
 }
 
 function confirmarPedido(){
-    let link = encodeURIComponent("Olá, gostaria de fazer o pedido:");
+    let link = encodeURIComponent(nomePrato);
+    const valor = (parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa)).toFixed(2);
+    /*("Olá, gostaria de fazer o pedido:
+    -Nome " + nomePrato + 
+    "- Bebida: " + nomeBebida + 
+    "\- Sobremesa: " + nomeSobremesa + 
+    "Total: R$ " + total + 
+    "Nome: " + nomeConfirmacao + 
+    "Endereço: " + endereco);*/
 
-    /*+ nomePrato + "\
-    - Bebida: " + nomeBebida + "\
-    - Sobremesa: " + nomeSobremesa + "\
-    Total: R$ " + valor + "\
-    Nome: " + nomeConfirmacao + "\
-    Endereço: " + endereco);*/
+    alert(nomePrato);
+    alert(nomeBebida);
+    alert(nomeSobremesa);
+    alert(valor);
+    alert(endereco);
+    alert(nomeConfirmacao);
 
-    //alert(link);
-
-    window.location = "https://wa.me/552492494516?text=" + link;
+    //window.location = "https://wa.me/552492494516?text=" + link;
 }
 
 function cancelarPedido(){
