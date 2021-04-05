@@ -116,11 +116,13 @@ function fecharPedido(){
 
 function confirmarPedido(){
     const valor = (parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa)).toFixed(2);
-    let link = "Olá, gostaria de fazer o pedido:\n- Prato: " + nomePrato + "\n- Bebida: " + nomeBebida + "\n- Sobremesa: " + nomeSobremesa + "\nTotal: R$ " + valor + "\n\nNome: " + nomeConfirmacao + "\nEndereço: " + endereco;
+    let link = "Olá, gostaria de fazer o pedido:\n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + valor + "\n \n Nome: " + nomeConfirmacao + "\n Endereço: " + endereco;
     
-    const wpp = encodeURIComponent(link);
+    alert(link);
+    const whatsApp = encodeURIComponent(link);
+    alert(whatsApp);
 
-    window.location = "https://wa.me/552492494516?text=" + link;
+    window.location = "https://wa.me/552492494516?text=" + whatsApp;
 }
 
 function cancelarPedido(){
