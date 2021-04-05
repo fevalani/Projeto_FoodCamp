@@ -88,9 +88,9 @@ function fecharPedido(){
     endereco = prompt("Insira seu endereço: ");
 
     const nome = document.querySelector(".nome");
-    nome.innerHTML = "Nome: " + nomeConfirmacao;
+    nome.innerHTML = "<strong>Nome: </strong>" + nomeConfirmacao;
     const enderecoConfirmacao = document.querySelector(".endereco");
-    enderecoConfirmacao.innerHTML = "Endereço: " + endereco;
+    enderecoConfirmacao.innerHTML = "<strong>Endereço: </strong>" + endereco;
 
     const pedido = document.querySelector(".confirmacao");
     pedido.classList.remove('desaparecer');
@@ -118,9 +118,7 @@ function confirmarPedido(){
     const valor = (parseFloat(precoPrato) + parseFloat(precoBebida) + parseFloat(precoSobremesa)).toFixed(2);
     let link = "Olá, gostaria de fazer o pedido:\n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + valor + "\n \n Nome: " + nomeConfirmacao + "\n Endereço: " + endereco;
     
-    alert(link);
     const whatsApp = encodeURIComponent(link);
-    alert(whatsApp);
 
     window.location = "https://wa.me/552492494516?text=" + whatsApp;
 }
